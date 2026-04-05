@@ -3,6 +3,7 @@ import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Home from './pages/Home'
 
 function AppLayout() {
   const location = useLocation()
@@ -14,6 +15,7 @@ function AppLayout() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </>
   )
